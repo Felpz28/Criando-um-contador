@@ -6,14 +6,14 @@ const limite = 9;
 const limiteNegativo = -9;
 
 
-/* addeventlistener faz com que dê a função de botão sem precisar aplicar diretament ao html com onclick*/
+/* addeventlistener faz com que dê a função de botão sem precisar aplicar diretamente ao html com onclick*/
 btn1.addEventListener('click', increment);
 btn2.addEventListener('click', decrement);
 
 
 
 function increment() {
-// utilizei condicional 'if' para ajudar a desabilitar o botão, não sei se fiz certo, mas deu certo
+// utilizei condicional 'if' para ajudar a desabilitar o botão, não sei se fiz certo, mas deu certo!
     if (currentNumber <= limite)
     currentNumber = currentNumber+1;
     if(currentNumber >= 0) {
@@ -32,9 +32,9 @@ function decrement() {
     Mostrar()
     
 }
-/*função mostrar faz com que apareça a alteração do contador na tela*/
+/*função "mostrar" faz com que apareça a alteração do contador na tela*/
 function Mostrar() {
-    /* Pode ser usao no lugar do getElement o querySelector*/
+    /* O getElementById pode ser usado no lugar do getElement o querySelector*/
     var span = document.getElementById("currentNumber")
     span.innerHTML = currentNumber
 }
